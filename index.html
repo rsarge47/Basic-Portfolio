@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <title>Robert Sargent</title>
     </head>
 
@@ -13,33 +13,38 @@
         
         <section class="navbar">
             <!-- this is the navigation bar -->
-            <ul>
+            <ul class="navlist">
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </section>
         
-        <section class="about">
-            <header class="about-me">About Me</header>
-            <img src="headshot.jpg" alt="Robert">
-                <article class="bio">
-                    <p>This is where I'm going to write the first paragraph about myself</p>
+        <main>
+        
+            <section class="about">
+                <header class="about-me">About Me</header>
+                <img class="headshot" src="assets/images/headshot.jpg" alt="Robert">
+                    <article class="bio">
+                        <p>This is where I'm going to write the first paragraph about myself</p>
 
-                    <p>This is where I'm going to write the second paragraph about myself</p>
-                </article>
-        </section>
+                        <p>This is where I'm going to write the second paragraph about myself</p>
+                    </article>
+            </section>
 
-        <section class="connect-links">
-            <!-- this is the contact links to me -->
-            <header class="connect-head">Connect with Me</header>
-                <div class="robert-links">
-                    <a class="github" href="https://github.com/rsarge47"><img class="githubpic" src="github-pic" alt="GitHub"></a>
-                    <a class="linkedin" href="https://www.linkedin.com/in/robert-sargent-b76835148/"><img class="linkedinpic" src="linkedin-pic" alt="LinkedIn"></a>
-                    <a class="stack" href="https://www.stackoverflow.com"><img class="stackpic" src="stack-pic" alt="Stack Overflow"></a>
-                </div>
-        </section>
+            <section class="connect-links">
+                <!-- this is the contact links to me -->
+                <header class="connect-head">Connect with Me</header>
+                    <div class="robert-links">
+                        <!-- planning to change this to pics I will upload to github -->
+                        <a class="github" href="https://github.com/rsarge47"><img class="githubpic" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN8AAAB1CAMAAAD5oMSWAAAAbFBMVEX///8AAAB6enrf398mJiZsbGzu7u78/Pxvb2/r6+v29vaVlZW9vb3Q0NDx8fF+fn4gICBDQ0NSUlJKSkq1tbWPj4/l5eUyMjI5OTk+Pj6lpaXY2NhmZmabm5taWlp0dHQREREZGRnGxsaGhoYk+NjPAAAD5UlEQVR4nO2d65aqMAyFLeBUEESBQVTE2/u/49GZkVFaaIEMbD3dP4Vm8S1pm6SJTiZGcn3Yw+ljeLy5M6TmQ+MlbFglA/NZA/NZhs/wGT7DZ/gMn+EzfIbP8Bk+w2f4sPiWpz4YR3S+aXBO5rPax2zSKtwn/jbD5ktvF73UX7elmwYuv43dQvMV/H6DHS714ZyLex+XrpD59g+3BBddPGv3MGyKzOc/3WQX5YXTOtusivwQWtMiWm2y9am8FNlPg/bAfOtd5bYkvq6J0WWfBCl//NxLz9u9db3ICr8yJADmi93qfW4Q2C6XWZhMuLsLgoUwApgvryFpJWC+KYVpwzeA/k++d59/kbB+thfy+insfx2EvP+x6mbdQcj+CyM4Z4X2Py/9LefAfO8+/wimX80LCsEXkpi2ZYExAt+GqExFVpuBwLclss0lKQoAvpjCOfvSDpJvrx6lqwKRT4jEu8sH5MsJracxHh/V6nITn8HxHQNK84KTPTrfxlYP0pfgpI3OV5DWoApB7uh8B1r7785X9UFH56PxrUtVN4h346sGSe/GV90AR+cjfoCqBzo6H/H6Ajf/co/UPtz6SZG6ftAfv/5KCXwZqX+2gONjZ0rzZzw+0g6aOR7fJ6V5vPiPrcjSS7Iin/H5KPMvwvRD4CNMUIjWAfgKMuOeaByAb0mWgZHUEALwURz+fYlLakAR+I4pjW0xu4vBR5Ti/RCSuyh8ND6atMAAg29D8IbaUssYfCzqvcm7G2S+/mF8JLeLwsemvfLYXg0eDh8reszBQF48D8XHss5VIkl9SwEQ33Uf7JKr4EHduwnHx05Wa8Jzs8UR+dau53nBzHl6nmPkL7QDXs+taztC4Iu/P0nDyiMdrSRQL6bc9vfykjoUvrIoUgxrnDi/+PWJUb7bHiLVNzc+X9lhIy/9Y6xmMrb5jZxx1xfnZ0uQN7fVJS64dgPW2Hx3Bl6dgzfNatcZT+5rIvL9lH4uRAfk1JC2kEWyoHzO9yQTp2DcYMVzhNtR+e6tm8Ki0eityYvlIfnuIFXAxi1QTOTi8t3rP597i5urQne6fcgAfOUJ0sdnOa3WYXNFvdvkU6Px/R5R2/5s4yyji69ys7mGawbD16E9gMu7VUD5nPY1Bi/F1+EphINMaD4Wtj3kfDE+dmj5ir4aH3OSVinel+O7RoPz82+KcKH4Pl+Q7xoyZFExPRzyKIoyxan1S/I9StHRafjA+RRlP4bP8P2FqPhey/+USLG+GD5wPkVXp+ED51P4Z7p2hubTPhtR5Cx07QzNp/v/D8qmakvLzKl14NxbWv/foRHtulr/4EHbXfE++gcDKT3IFdHvUAAAAABJRU5ErkJggg==" alt="GitHub"></a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/robert-sargent-b76835148/"><img class="linkedinpic" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAYFBMVEUAe7X///8Ad7OBqc0lgLfq8fYAdLGYudYAebTh6/P4+vxGirwAcbDJ3euArc8kh7tXmMQ2hbqNtdTw9/oAba5kncemxt220OPZ5vBPk8F5qMwAaazR4u1yo8rA1+eQu9j3rtTgAAACdUlEQVRoge2b7XKrIBBAAYUiohU18aPm9v3f8mKaZIQk91Kiy0zk/CumObMLrEtmQFhTlJ8IDv5ZFrMVYUwrSQDNGiIrOqupYrDiGaaoVlcBzNpdYVTIEGaEZIFK4Hm+QkoEubYNgon1HgunjkQikcg7w3mgVwyXaZ4rwuD1THWZwE1fE2i3rPEFqmD7KPmNbwhQN6nwgh5yubXTUo1PgGGnwlADNuz8YJhxBpdxkphqmoKp76IG7JxTUw15OGuLYCvc3NcTaC1li2rW5LBVnNXXrZ3l0GdhmR9neVYz+FM4l22qeBvkN49ZD98ncIvHw4vPnx+tUXi4bo0MLt9pDaufDxPJUKr0nymS7NU8kUQYZD81nH1gY7jX64CwdOymjDZCNDQrPgb0WjP35PWh1WZpZ3MHJ6zBkryyJZzVssT30OGFku+q/qrxQ0p/t6taWcm+MXpXA0d1f3xixnjwnW9H9dQ8Vfe+LztH9bN0z5SeKXdU/wvfTnIFNT74zfYa6s5vg62hpn4LbQ21GIKp8eg12auoj16T/Qu16JKqOtTd/ZOi3VZ9lJJwMncLf+xHzdem6m95W0utHbjwqmeu6mnZkRBqqdMt1adlYMufX854HVpc1UbVMM9pGq+N7aimxmxyZb1DK5+N7d4WLtWpNdmHDaP+j9rrVO6lRrbaq5KuE3WyB/VdwmPUbxt1THhUR/VG6n2u8H1GHRO+H/U+E77PqN8u4Y1b1NYh10uN8sRgvHz5YA6frFPsaD7Ofcw6bpNrYOaofX5+/E+RSCQSiUQivyXYfRce8npRwEtVAa+SBbxAF/LaYMDLkvh8RRRwj12viP4FH7UplvXE9KAAAAAASUVORK5CYII=" alt="LinkedIn"></a>
+                        <a class="stack" href="https://www.stackoverflow.com"><img class="stackpic" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAclBMVEX////0gCO8u7vR0NDzdQDzcgD95tn73Mz6+vq5uLjX1tbq6ur0fx/zdwDBwMD0fBb++fb1ijr+8+372cX6yKz97OL84tP3qXn2mVv2o3D5xKX4tY71jEL1hzP1kEf2nWb60Lj3rYH1k1H5vp7zawD4upXDnAxnAAADd0lEQVRoge2Y65baIBSFZQpJp0JPQqKJuZjEmPd/xeZ2clOnOgNMVxf73+DgJ+xzAXY7KysrKyur/0jet1BlHH0H1iXAAvPYmnFCqDRM9S6UtIKzYW4uSC+RmuU6wAcwNWxxOC6Yk4NZcDSCITbL9TIYLW7Mgp1xwUS4ZsEhRYsNZ3EBpixOwtWfnJux2KV0VSccNlrMHJ1Y2RYLUSybX4IWg86WmHfbCtmyUMRocaEPO4YRkEXeyBzrZaIL24x7Srgo59FgyuKjJq4L4562YbSI3wYLta/LYplPYLqILrRY6Dv1xLipRPhTjZIELQ4/mvslVegxAZiiK8BBoS+LQ8oxuublYcTxXF8WH/lksqhwcMrikzbuTp5nk+NxfRJPPUKfxTvvNJuM0RUwTG2dp550Mhn4GF3VlMUaue2hboou3Fkfs7j6eOoLSqub84Q7R9fYGQ9oMSsVYT0GNNraJv1t7Sox3ECRxXX7hcCKbdkv5ujK+/1Ai5miZBq8BJZtbgYNHjbaEtJH17nbAs5qNVi8GLQhlJerT8pF7eq6b2cxEFXtMMMv78nJshIuahet+h9CY1WVMrjO3J7cLIJbZnPtKtrxSt25UoYZXZNJuiAXMzhTXKq88ixgRYZFWqVTCQFQfm0ILisyAXqaWu1Uu7Rcwd2Crsksxr7vEhgM1oBtdYiuG3JWDp9IX2htCF5KxSrEKIxNoaBcvblLck02wQ11n7DNVesFqSXfpBXv00r/I4cXXOg6rXhl6GnFjTcJrfjZzkvLw/16ezzBgqz6MugIyvIiDeQduBPBXCIVP6x0RwgO0MJPtXvDlqkYyHBRi91VuJccupVHyaa3enWf0EL1U+F5mTEdnF3zKlxlaphTyBRjPbLiIlyIcxtv03+VfqmYexQ32AkOJG4CTWkbcCqA3655Wjjxi+SoAS6dMLqQx3DexRuUX+b8HLQePByTIiNCwIOF45PZ3clP6dfvQXfmHoImzuEeGx9F92/93Lf9J7jvb70e/WanTDPYLpyPb6L7YfK7Bu4ADyuf0RkOlRlur2MS5SOclga5nTy3PrXw68Ewt5cMUu87uLPUcaX7jLBFqeMGV/p3MaJ8n4NHbWGVvr7lWu5r3Ct7Qlw513Oe0k419zVZruVa7or7FVmu5f47XAX6BHf/Q4E+wbWysrKysrKyUqY/AyJEo/B7rs4AAAAASUVORK5CYII=" alt="Stack Overflow"></a>
+                    </div>
+            </section>
     
+        </main>
+        
         <footer class="footer">&copy; copyright 2018 Robert Sargent</footer>
     </body>
 
